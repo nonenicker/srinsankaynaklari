@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR İnsan Kaynakları | Profesyonel Uluslararası İş Gücü Temini</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* ARKA PLAN TRANSPARAN LOGO (WATERMARK) */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60vw;
+            height: 60vh;
+            background: url('img/bcklogo.png') no-repeat center center;
+            background-size: contain;
+            opacity: 0.08; 
+            z-index: -10;
+            pointer-events: none; 
+        }
+
+        /* YENİ SADELEŞTİRİLMİŞ HERO BÖLÜMÜ (SOLA DAYALI FERAH TASARIM) */
+        .hero {
+            justify-content: flex-start; /* İçeriği ortadan alıp sola yaslıyoruz */
+        }
+        .hero-content {
+            text-align: left; /* Metinler sola hizalı */
+            max-width: 800px; /* Metin satırlarının çok uzamasını engelliyoruz */
+            margin-left: 8%; /* Ekranın solundan asil bir boşluk bırakıyoruz */
+        }
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 4.5vw, 4rem);
+            letter-spacing: -1.5px;
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+        .hero-content p {
+            font-size: 1.15rem; /* Paragraf boyutunu göz yormaması için bir tık küçülttük */
+            line-height: 1.8;
+            font-weight: 500;
+            color: #475569; /* Antrasit gri ile daha yumuşak bir okuma deneyimi */
+            margin-bottom: 40px;
+        }
+        .hero .btn-group {
+            justify-content: flex-start; /* Butonları da sola aldık */
+        }
+        .welcome-heading {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        @media (max-width: 768px) {
+            .hero-content {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+
+        /* 01, 02, 03 KARTLARI İÇİN PREMİUM HOVER EFEKTİ */
+        .process-card-hover {
+            transition: all 0.4s ease;
+        }
+        .process-card-hover strong, .process-card-hover h3, .process-card-hover p {
+            transition: all 0.4s ease;
+        }
+        .process-card-hover:hover {
+            background-color: var(--primary) !important;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2) !important;
+        }
+        .process-card-hover:hover strong {
+            color: var(--accent-gold) !important;
+            -webkit-text-stroke: 0px !important;
+            opacity: 0.9 !important;
+        }
+        .process-card-hover:hover h3 {
+            color: #ffffff !important;
+        }
+        .process-card-hover:hover p {
+            color: #cbd5e1 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                <img src="img/logo.png" alt="SR İnsan Kaynakları Logo" style="height: 40px; object-fit: contain;">
+                SR <span>İnsan Kaynakları</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+            <li><a href="referanslar.html">Sektörler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <video src="img/vid.mp4" autoplay loop muted playsinline class="hero-video"></video>
+        <div class="hero-overlay"></div> 
+        <div class="hero-content reveal active">
+            
+            <span style="display: inline-block; padding: 8px 20px; background: white; border-radius: 30px; border: 1px solid rgba(0,0,0,0.1); font-size: 0.9rem; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); color: var(--primary);">2018'DEN BUGÜNE GÜVENLE</span>
+            
+            <h1 style="color: var(--primary);">
+                Yerel İş Gücü Krizlerine, <br><span style="color: var(--accent-gold);">Küresel ve Kesin Çözümler.</span>
+            </h1>
+            
+            <span class="welcome-heading">SR İnsan Kaynakları'na Hoş Geldiniz.</span>
+            
+            <p>
+                Sürekli işten ayrılan personeller ve üretimdeki aksamalar kaderiniz değil. İşletmenize Hindistan, Nepal, Bangladeş, Pakistan, Filipinler ve Sri Lanka başta olmak üzere Asya'nın dört bir yanından sadık, çalışkan ve yasal güvenceli uluslararası iş gücü entegre ediyoruz.
+            </p>
+            
+            <div class="btn-group">
+                <a href="iletisim.html" class="btn btn-primary">İşveren Talebi Oluşturun</a>
+                <a href="iletisim.html#aday" class="btn btn-outline">Aday Başvurusu (Apply)</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="trust-bar reveal">
+        <div class="trust-container">
+            <div class="trust-item"><i class="fa-solid fa-building-shield"></i><span>2018'den Beri Sektör Tecrübesi</span></div>
+            <div class="trust-item"><i class="fa-solid fa-file-signature"></i><span>İŞKUR Onaylı İstihdam Bürosu</span></div>
+            <div class="trust-item"><i class="fa-solid fa-user-graduate"></i><span>Yüksek Lisanslı Profesyonel Kadro</span></div>
+            <div class="trust-item"><i class="fa-solid fa-scale-balanced"></i><span>%100 Yasal ve Şeffaf Süreç</span></div>
+            <div class="legal-notice">
+                SR İnsan Kaynakları Danışmanlık İthalat İhracat Sanayi ve Ticaret Limited Şirketi, Türkiye İş Kurumu'nun izin belgesi ile faaliyet gösteren özel istihdam bürosudur. 4904 sayılı kanun gereği iş arayanlardan ücret alınması yasaktır.
+            </div>
+        </div>
+    </div>
+
+    <section class="heavy-section container reveal">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+            <div>
+                <div class="section-header-left">
+                    <h2>Neden Uluslararası <br>İş Gücüne İhtiyacınız Var?</h2>
+                    <p>Günümüz rekabet koşullarında Türkiye'deki işletmelerin en büyük handikabı, üretim bantlarında ve hizmet alanlarında çalışacak "istikrarlı" personel bulamamaktır. Kapasitenizi düşüren bu sorunları teknolojik ve global bir yaklaşımla çözüyoruz.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <i class="fa-solid fa-arrow-trend-down" style="color: #dc2626;"></i>
+                    <div>
+                        <h4>Sürekli İşe Alım Maliyetine Son</h4>
+                        <p>Yerel personeldeki yüksek sirkülasyon oranı, işletmelere devasa eğitim ve zaman maliyeti yaratır. Asya pazarından getirdiğimiz iş gücü, uzun süreli kontratlara sadık kalarak firmanıza kalıcı aidiyet geliştirir.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box">
+                    <i class="fa-solid fa-gears" style="color: var(--accent-turq);"></i>
+                    <div>
+                        <h4>Tam Kapasite, Kesintisiz Üretim</h4>
+                        <p>Fabrikanızda, şantiyenizde veya otelinizde "eleman yok" mazeretiyle işlerin durmasına izin vermeyin. İstediğiniz vasıfta ve sayıda personeli, vardiyalı sisteminize anında entegre ediyoruz.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: var(--secondary-bg); padding: 50px; border-radius: 30px; border: 1px solid rgba(0,0,0,0.05);">
+                <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 20px; font-weight: 800;">Uzman Kadro Farkı</h3>
+                <p style="font-size: 1.1rem; color: var(--text-light); line-height: 1.8; margin-bottom: 30px;">
+                    Bizler sadece bir aracı kurum değiliz. <strong>Yüksek lisans eğitimli uzman yönetim kadromuz</strong> ile işletmenizin insan kaynakları stratejisini global ölçekte yeniden tasarlıyoruz. Sıfır bürokrasi, sıfır stres.
+                </p>
+                <div style="display: flex; gap: 20px; border-top: 2px solid rgba(0,0,0,0.05); padding-top: 30px;">
+                    <div><strong style="font-size: 2rem; color: var(--accent-gold);">7+</strong><br><span style="color: var(--text-light); font-weight: 600;">Yıllık Tecrübe</span></div>
+                    <div><strong style="font-size: 2rem; color: var(--accent-gold);">%100</strong><br><span style="color: var(--text-light); font-weight: 600;">Yasal Uyum</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="heavy-section bg-light reveal">
+        <div class="container">
+            <div class="section-header-left" style="margin: 0 auto 60px; text-align: center;">
+                <h2>Hızlı ve Profesyonel Süreç Yönetimi</h2>
+                <p>Yabancı personel çalıştırmanın karmaşık bürokrasisinden korkmayın. İŞKUR yönergeleri ve Çalışma Bakanlığı mevzuatına tam uyumlu olarak tüm süreci sizin adınıza biz yürütüyoruz.</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card process-card-hover" style="text-align: left; cursor: default;">
+                    <strong style="font-size: 4rem; color: var(--secondary-bg); -webkit-text-stroke: 2px var(--primary); opacity: 0.2; line-height: 1; display: block; margin-bottom: -20px;">01</strong>
+                    <h3 style="margin-top: 10px;">İhtiyaç Analizi</h3>
+                    <p>Firmanızın dinamiklerini, çalışma koşullarını ve tam olarak kaç kişilik nasıl bir ekibe ihtiyacınız olduğunu detaylıca projelendiriyoruz.</p>
+                </div>
+                <div class="card process-card-hover" style="text-align: left; cursor: default;">
+                    <strong style="font-size: 4rem; color: var(--secondary-bg); -webkit-text-stroke: 2px var(--primary); opacity: 0.2; line-height: 1; display: block; margin-bottom: -20px;">02</strong>
+                    <h3 style="margin-top: 10px;">Global Mülakat</h3>
+                    <p>Hindistan ve Nepal'deki partnerlerimizle adayları süzgeçten geçiriyor, teknik mülakatlarla en doğru isimleri belirliyoruz.</p>
+                </div>
+                <div class="card process-card-hover" style="text-align: left; cursor: default;">
+                    <strong style="font-size: 4rem; color: var(--secondary-bg); -webkit-text-stroke: 2px var(--primary); opacity: 0.2; line-height: 1; display: block; margin-bottom: -20px;">03</strong>
+                    <h3 style="margin-top: 10px;">Bürokrasi ve Vizeler</h3>
+                    <p>Çalışma Bakanlığı'ndan izinlerin alınması ve konsolosluk vize süreçlerini eksiksiz ve hızlı bir şekilde tamamlıyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal" style="background: linear-gradient(135deg, var(--secondary-bg) 0%, #ffffff 100%); border-top: 1px solid rgba(0,0,0,0.05); padding: 60px 20px; margin-top: 30px;">
+        <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <i class="fa-solid fa-shield-halved" style="font-size: 4.5rem; color: var(--accent-gold);"></i>
+            <div style="max-width: 800px; text-align: left;">
+                <h3 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 10px; font-weight: 800;">Evraklarınız ve Verileriniz SR Danışmanlık İle Güvende</h3>
+                <p style="color: var(--text-light); line-height: 1.6; font-size: 1.1rem; font-weight: 500;">
+                    Firmamızla sağladığınız ilk temastan, işe alım sürecinin sonuna kadar; tüm şirket evraklarınız, sözleşmeleriniz ve ticari sırlarınız KVKK standartlarında büyük bir itina ve üst düzey güvenlik protokolleriyle korunmaktadır.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px; text-decoration: none;">
+                    <img src="img/logo.png" alt="SR İnsan Kaynakları Logo" style="height: 50px;">
+                </a>
+                <p style="font-size: 0.8rem;">SR İNSAN KAYNAKLARI DANIŞMANLIK İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ</p>
+                <p style="font-weight: 800; color: var(--accent-gold); letter-spacing: 1px;">2018'DEN BERİ GÜVENLE.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı İletişim</h4>
+                <p><i class="fa-solid fa-envelope"></i> nepalireham854@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0 531 401 09 32</p>
+                <p><i class="fa-solid fa-location-dot"></i> Gürsu, Bursa</p>
+            </div>
+            <div class="footer-col">
+                <h4>Kurumsal</h4>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="hizmetler.html">Hizmetlerimiz</a>
+                <a href="iletisim.html">İletişim Formu</a>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>Türkiye İş Kurumu'nun izin belgesi ile faaliyet gösteren özel istihdam bürosudur. 4904 sayılı Kanun uyarınca iş arayanlardan ücret alınması yasaktır.</p>
+            <p style="margin-top: 10px;">&copy; 2026 SR İnsan Kaynakları. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

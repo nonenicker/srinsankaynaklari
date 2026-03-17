@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz | SR İnsan Kaynakları</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* ARKA PLAN TRANSPARAN LOGO (WATERMARK) */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60vw;
+            height: 60vh;
+            background: url('img/bcklogo.png') no-repeat center center;
+            background-size: contain;
+            opacity: 0.08;
+            z-index: -10;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                <img src="img/logo.png" alt="SR İnsan Kaynakları Logo" style="height: 40px; object-fit: contain;">
+                SR <span>İnsan Kaynakları</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="hizmetler.html" class="active">Hizmetlerimiz</a></li>
+            <li><a href="referanslar.html">Sektörler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Uçtan Uca İK Çözümleri</h1>
+        <p>Uluslararası standartlarda, teknoloji destekli ve hatasız hizmet ağı.</p>
+    </header>
+
+    <section class="heavy-section container reveal">
+        <div class="grid-3">
+            <div class="card">
+                <i class="fa-solid fa-plane-arrival"></i>
+                <h3>Uluslararası Toplu İş Gücü Temini</h3>
+                <p>Türkiye'deki işletmeniz için Asya'nın dört bir yanından aradığınız spesifikasyonlara ve sayılara tam uygun toplu personel tedariki sağlıyoruz. Yüksek sirkülasyon sorununu kökten çözüyoruz.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-user-check"></i>
+                <h3>Teknolojik Seçme ve Yerleştirme</h3>
+                <p>Modern mülakat teknikleri, dijital yetkinlik testleri ve referans kontrolleri ile adayları ülkesinde analiz ediyor, yalnızca kurum kültürünüze uygun profilleri sunuyoruz.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-file-contract"></i>
+                <h3>Yasal İzin ve Bürokratik Süreçler</h3>
+                <p>Çalışma Bakanlığı izinleri, konsolosluk vize işlemleri ve İŞKUR bildirimleri gibi ağır süreçleri uzman kadromuzla üstleniyoruz. Evrak trafiğini sizin için sıfıra indiriyoruz.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-legal">
+            <p>Türkiye İş Kurumu'nun izin belgesi ile faaliyet gösteren özel istihdam bürosudur. 4904 sayılı kanun gereği iş arayanlardan ücret alınması yasaktır.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

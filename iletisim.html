@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | SR İnsan Kaynakları</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* ARKA PLAN TRANSPARAN LOGO (WATERMARK) */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60vw;
+            height: 60vh;
+            background: url('img/bcklogo.png') no-repeat center center;
+            background-size: contain;
+            opacity: 0.08;
+            z-index: -10;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                <img src="img/logo.png" alt="SR İnsan Kaynakları Logo" style="height: 40px; object-fit: contain;">
+                SR <span>İnsan Kaynakları</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+            <li><a href="referanslar.html">Sektörler</a></li>
+            <li><a href="iletisim.html" class="active">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Bize Ulaşın</h1>
+        <p>İş gücü taleplerinize, uzman kadromuz ve teknolojik altyapımızla en kısa sürede profesyonel çözümler üretiyoruz.</p>
+    </header>
+
+    <section class="heavy-section container reveal">
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 60px;">
+            
+            <div>
+                <h2 style="font-size: 2rem; margin-bottom: 20px; color: var(--primary); font-weight: 800;">Hızlı Destek</h2>
+                <p style="color: var(--text-light); margin-bottom: 40px; line-height: 1.6; font-size: 1.1rem;">Operasyonlarınızı bekletmemek adına taleplerinizi anında değerlendiriyor, ihtiyacınıza uygun iş gücü planlamasını derhal yapıyoruz.</p>
+                
+                <div style="margin-bottom: 30px; display: flex; align-items: center; gap: 20px;">
+                    <i class="fa-solid fa-phone" style="color: var(--primary); font-size: 1.8rem;"></i>
+                    <div>
+                        <span style="display: block; font-size: 0.9rem; color: var(--text-light);">Telefon</span>
+                        <strong style="font-size: 1.2rem; color: var(--primary);">0 531 401 09 32</strong>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 30px; display: flex; align-items: center; gap: 20px;">
+                    <i class="fa-solid fa-envelope" style="color: var(--primary); font-size: 1.8rem;"></i>
+                    <div>
+                        <span style="display: block; font-size: 0.9rem; color: var(--text-light);">E-Posta</span>
+                        <strong style="font-size: 1.2rem; color: var(--primary);">nepalireham854@gmail.com</strong>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 30px; display: flex; align-items: center; gap: 20px;">
+                    <i class="fa-solid fa-location-dot" style="color: var(--primary); font-size: 1.8rem;"></i>
+                    <div>
+                        <span style="display: block; font-size: 0.9rem; color: var(--text-light);">Merkez Ofis</span>
+                        <strong style="font-size: 1.2rem; color: var(--primary);">Zafer Mahallesi Küplüpınar Caddesi No: 38/1 Gürsu, Bursa / Türkiye</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="form-box">
+                    <h3 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 30px; font-weight: 800;">İşveren Talep Formu</h3>
+                    <form>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group"><input type="text" placeholder="Firma Adı" required></div>
+                            <div class="form-group"><input type="text" placeholder="Yetkili Kişi" required></div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group"><input type="tel" placeholder="Telefon" required></div>
+                            <div class="form-group"><input type="email" placeholder="Kurumsal E-Posta" required></div>
+                        </div>
+                        <div class="form-group"><textarea placeholder="Hangi sektördesiniz? Kaç kişilik ve hangi pozisyonda iş gücüne ihtiyacınız var?" rows="5" required></textarea></div>
+                        <button class="submit-btn">Talebi Uzmanlarımıza İlet</button>
+                    </form>
+                </div>
+
+                <div class="form-box" id="aday" style="margin-top: 40px; border-top: 5px solid var(--accent-turq);">
+                    <h3 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 30px; font-weight: 800;">Aday Başvuru Formu</h3>
+                    <form>
+                        <div class="form-group"><input type="text" placeholder="Ad Soyad / Full Name" required></div>
+                        <div class="form-group"><input type="text" placeholder="Ülke / Country" required></div>
+                        <div class="form-group"><input type="tel" placeholder="Telefon / Phone" required></div>
+                        <button class="submit-btn" style="background: var(--accent-turq);">Başvuru Yap / Submit Application</button>
+                        
+                        <div class="legal-notice" style="margin-top: 20px; padding: 15px; background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; text-align: left;">
+                            <i class="fa-solid fa-triangle-exclamation"></i> 4904 sayılı kanun gereği iş arayanlardan hiçbir ad altında menfaat temin edilemez ve ücret alınamaz.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-legal">
+            <p>Türkiye İş Kurumu'nun izin belgesi ile faaliyet gösteren özel istihdam bürosudur. 4904 sayılı kanun gereği iş arayanlardan ücret alınması yasaktır.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

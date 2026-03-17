@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sektörler | SR İnsan Kaynakları</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ARKA PLAN TRANSPARAN LOGO (WATERMARK) */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60vw;
+            height: 60vh;
+            background: url('img/bcklogo.png') no-repeat center center;
+            background-size: contain;
+            opacity: 0.08;
+            z-index: -10;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                <img src="img/logo.png" alt="SR İnsan Kaynakları Logo" style="height: 40px; object-fit: contain;">
+                SR <span>İnsan Kaynakları</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+            <li><a href="referanslar.html" class="active">Sektörler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Hizmet Verdiğimiz Sektörler</h1>
+        <p>Türkiye'nin ekonomisini sırtlayan tüm ana endüstriler için, hızlı ve kesintisiz iş gücü temin ediyoruz.</p>
+    </header>
+
+    <section class="heavy-section container reveal">
+        <div class="grid-3" style="text-align: left;">
+            <div class="card" style="padding: 40px 30px;">
+                <h3 style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-helmet-safety" style="margin: 0;"></i> İnşaat & Taahhüt</h3>
+                <p style="margin-top: 15px;">Büyük ölçekli şantiyeler için yüksek fiziki dayanıklılığa sahip düz beden işçilerinden; demirci, kalıpçı ve kaynakçı gibi ustalara kadar eksiksiz kadro kurulumu sağlıyoruz.</p>
+            </div>
+            
+            <div class="card" style="padding: 40px 30px;">
+                <h3 style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-industry" style="margin: 0;"></i> Fabrika & İmalat</h3>
+                <p style="margin-top: 15px;">Tekstil, plastik, otomotiv ve ambalaj gibi 7/24 üretim yapan tesislerin bantlarında çalışacak, sirkülasyonu düşük, disiplinli personeller temin ediyoruz.</p>
+            </div>
+            
+            <div class="card" style="padding: 40px 30px;">
+                <h3 style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-bell-concierge" style="margin: 0;"></i> Turizm & Otelcilik</h3>
+                <p style="margin-top: 15px;">5 yıldızlı oteller ve tatil köyleri için kat görevlileri (housekeeping), mutfak yardımcıları, bulaşıkçılar (steward) ve genel temizlik personellerini titizlikle seçiyoruz.</p>
+            </div>
+
+            <div class="card" style="padding: 40px 30px;">
+                <h3 style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-tractor" style="margin: 0;"></i> Tarım & Sera Üretimi</h3>
+                <p style="margin-top: 15px;">Modern seracılık ve tarımsal paketleme tesislerinin iş gücü ihtiyacını, kırsal yaşam koşullarına adapte olabilen dirençli ekiplerle çözüyoruz.</p>
+            </div>
+
+            <div class="card" style="padding: 40px 30px;">
+                <h3 style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-boxes-stacked" style="margin: 0;"></i> Lojistik & Depolama</h3>
+                <p style="margin-top: 15px;">Dev lojistik merkezleri, aktarma alanları ve antrepolar için sipariş toplayıcılar, paketlemeciler ve yükleme/boşaltma elemanlarını hızla organize ediyoruz.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-legal">
+            <p>Türkiye İş Kurumu'nun izin belgesi ile faaliyet gösteren özel istihdam bürosudur. 4904 sayılı kanun gereği iş arayanlardan ücret alınması yasaktır.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
